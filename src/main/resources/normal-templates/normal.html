@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>This is normal template!!</h1>
+	<div th:object="${bean}">
+		<p th:text="*{id}"></p>
+		<p th:text="*{name}"></p>
+	</div>
+</body>
+</html>
